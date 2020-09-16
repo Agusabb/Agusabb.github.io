@@ -21,7 +21,7 @@ function displayCart(){
   
   for (i=0; i<inames.length; i++){
     total += iqtyp[i] * iprice[i]
-    cartdata += "<tr><td>" + inames[i] + "</td><td>" + iqtyp[i] + "</td><td>" + iprice[i] + "</td><td>" + iqtyp[i] * iprice[i] + "</td><td><button onclick='delElement(" + i + ")'>Delete</button></td></tr>"
+    cartdata += "<tr><td>" + inames[i] + "</td><td>" + iqtyp[i] + "</td><td>" + iprice[i] + "</td><td>" + iqtyp[i] * iprice[i] + "</td><td><button onclick='delElement(" + i + ")'>Eliminar</button></td></tr>"
   }
   
   cartdata += '<tr><td></td><td></td><td></td><td>' + total + '</td></tr></table>'
